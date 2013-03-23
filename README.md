@@ -1,4 +1,4 @@
 Pokemon
 =======
 
-Pokemon Rom Hacking Scripts
+Pokemon Rom Hacking Scripts save as .rbc
