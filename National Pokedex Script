@@ -1,0 +1,25 @@
+#org 0x800000
+lock
+faceplayer
+checkflag 0x10A
+if 1 jump 0x800050
+special 0x16F
+setflag 0x10A
+fanfare 0x13E
+msgbox 0x800100
+callstd 0x6
+waitfanfare
+release
+end
+
+#org 0x800050
+msgbox 0x800070
+callstd 0x6
+release
+end
+
+#org 0x800070
+= Like your new POKéDEX?
+
+#org 0x800100
+= Your POKéDEX was upgraded!
