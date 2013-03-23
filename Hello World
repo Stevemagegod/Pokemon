@@ -1,0 +1,12 @@
+#dyn 0x740000
+#org @start
+lock
+faceplayer
+msgbox @text ' Hello World.
+callstd MSG_NORMAL
+boxset 6
+release
+end
+
+#org @text
+= Hello World From Xianb. 
