@@ -1,0 +1,42 @@
+#Org $StartScript
+checkflag 0x201
+if B_True goto $GotBall
+checkitem 0x26
+compare LASTRESULT 1
+if B_<< goto $NoCookie
+message $WantBall
+$WantBall 1 = Oh, You have a lavacookie.\pIf you give it to me I'll\lgive you this UltraBall...\pWhat do you say?
+boxset 5
+compare LASTRESULT 1
+if B_FALSE goto $DontGet
+giveitem 0x2 1
+removeitem 0x26 1
+Release
+end
+
+#ORG $GotBall
+Lock
+Faceplayer
+message $LikeCookie
+$LikeCookie 1 = Thanks for the cookie!
+boxset 6
+release
+end
+
+#ORG $NoCookie
+Lock
+Faceplayer
+message $LoveCookie
+$LoveCookie 1 = I Absolutely LOVE Lava Cookies!\lThey're Just so Spicy!
+boxset 6
+release
+end
+
+#ORG $DontGet
+Lock
+Faceplayer
+message $AAAW
+$AAAW 1 = Aaw C'Mon. It's a fair trade!!\nI Love those things.
+boxset 6
+release
+end
