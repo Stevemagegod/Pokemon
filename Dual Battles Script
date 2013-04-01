@@ -1,0 +1,12 @@
+#org $Trainer2
+lock
+faceplayer
+trainerbattle 4 258 $AMChall $AMDefeat $AMNoBattle
+$AMChall 1 = Anna: The others say we're not tough\lenough for this Gym.\pMeg: Well Show Em!
+$AMDefeat 1 = Anna: I guess they were right!\pMeg: Dont worry, We'll improve.
+$AMNoBattle 1 = Megn no.\pAnna: You can't battle us with\ljust one pokemon!
+message $AMTalk
+$AMTalk 1 = Anna: You just wait and see!
+boxset 6
+release
+end
