@@ -1,0 +1,11 @@
+#org $Trainer1
+lock
+faceplayer
+trainerbattle 0 395 $MadChall $MadDefeat
+$MadChall 1 = Madeline: I am mighty... I hope!
+$MadDefeat 1 = Madeline: Oh poor Numel!!!!
+message $MadTalk
+$MadTalk 1 = I thought having a fire pokemon\iwould help make me stronger.\pI Guess I was wrong.
+boxset 6
+release
+end
