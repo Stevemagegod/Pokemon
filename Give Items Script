@@ -1,0 +1,32 @@
+#org $Startscript
+Lock
+Faceplayer
+checkflag 0x200
+if B_TRUE goto $GotCookie
+message $AskMe
+$AskMe 1 = Would you like a Lava Cookie?
+boxset 5
+compare LASTRESUILT B_TRUE
+if B_False goto $DontGet
+giveitem 0x26 1
+setflag 0x200
+Release
+end
+
+#ORG $GotCookie
+Lock
+Faceplayer
+message $NoCookie
+$NoCookie 1 = I'm not made of cookies!\lYou only get one.
+boxset 6
+release
+end
+
+#ORG $DontGet
+Lock
+Faceplayer
+message $AllMine
+$AllMine 1 = All the more for me!
+boxset 6
+release
+end
