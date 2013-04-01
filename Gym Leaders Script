@@ -1,0 +1,11 @@
+#org $Trainer1
+lock
+faceplayer
+trainerbattle 0 114 $BernChall $BernDefeat $BernCode
+$BernChall 1 = Bernie: I am might... I hope!
+$BernDefeat 1 = Bernie: Oh poor Numel!!!!
+message $BernTalk
+$BernTalk 1 = Wow.. Colour be Burned!
+boxset 6
+release
+end
